@@ -35,50 +35,6 @@ navItems.forEach(link => {
   });
 });
 
-const textArray = [
-  "Innovation Development",
-  "Web Developer",
-  "Frontend Specialist"
-];
-
-let index = 0;
-let charIndex = 0;
-let currentText = "";
-let isDeleting = false;
-
-function typeEffect() {
-  const typingElement = document.querySelector(".typing");
-
-  if (index >= textArray.length) {
-    index = 0;
-  }
-
-  currentText = textArray[index];
-
-  if (!isDeleting) {
-    typingElement.textContent = currentText.substring(0, charIndex + 1);
-    charIndex++;
-
-    if (charIndex === currentText.length) {
-      isDeleting = true;
-      setTimeout(typeEffect, 1000);
-      return;
-    }
-  } else {
-    typingElement.textContent = currentText.substring(0, charIndex - 1);
-    charIndex--;
-
-    if (charIndex === 0) {
-      isDeleting = false;
-      index++;
-    }
-  }
-
-  setTimeout(typeEffect, isDeleting ? 50 : 100);
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
-
 document.addEventListener("DOMContentLoaded", function () {
   const typingElement = document.querySelector(".typing");
 
