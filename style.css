@@ -270,3 +270,47 @@ section h2::after {
   background: #00ffcc;
   color: #000;
 }
+
+*/
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.hero-content h2 {
+  margin: 20px 0;
+  font-weight: 400;
+  color: #00ffcc;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00ffcc;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #00ccaa;
+  transform: scale(1.05);
+}
+
+.logo-glow {
+  color: #fff;
+  text-shadow: 0 0 10px #00ffcc,
+               0 0 20px #00ffcc,
+               0 0 40px #00ffcc;
+}
