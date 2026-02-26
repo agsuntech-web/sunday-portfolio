@@ -1,5 +1,7 @@
 console.log("Js working!");
 
+document.addEventListener("DOMContentLoaded", function () {
+
 console.log("AG SuNtEcH portfolio loaded successfully!");
 
 const hiddenElements = document.querySelectorAll(".hidden");
@@ -77,4 +79,4 @@ navItems.forEach(link => {
   }
 
   typeEffect();
-};
+});
