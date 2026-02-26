@@ -317,3 +317,8 @@ section h2::after {
   color: #00ffff;   /* change to any bright color */
   font-weight: bold;
 }
+
+.typing {
+  color: red !important;
+  font-size: 30px;
+}
