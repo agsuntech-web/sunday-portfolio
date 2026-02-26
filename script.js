@@ -1,5 +1,7 @@
 console.log("Js working!")
 
+document.addEventListener("DOMContentLoaded", function () {
+
 console.log("AG SuNtEcH portfolio loaded successfully!");
 
 const hiddenElements = document.querySelectorAll(".hidden");
@@ -37,7 +39,6 @@ navItems.forEach(link => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
   const typingElement = document.querySelector(".typing");
 
   if (!typingElement) return;
