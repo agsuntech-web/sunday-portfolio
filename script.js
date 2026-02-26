@@ -1,6 +1,4 @@
-console.log("Js working!")
-
-document.addEventListener("DOMContentLoaded", function () {
+console.log("Js working!");
 
 console.log("AG SuNtEcH portfolio loaded successfully!");
 
@@ -79,4 +77,4 @@ navItems.forEach(link => {
   }
 
   typeEffect();
-});
+};
