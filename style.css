@@ -316,6 +316,8 @@ section h2::after {
 .typing {
   color: #00ffff;   /* change to any bright color */
   font-weight: bold;
+  display: inline-block;
+  min-height: 1.2em;
 }
 
 .typing {
