@@ -387,3 +387,27 @@ html {
   border-radius: 20px;
   font-weight: bold;
 }
+
+.theme-toggle {
+  background: none;
+  border: 2px solid #00f7ff;
+  color: #00f7ff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #00f7ff;
+  color: black;
+}
+
+.dark-mode {
+  background: white;
+  color: black;
+}
+
+.dark-mode .project-card {
+  background: #f0f0f0;
+}
