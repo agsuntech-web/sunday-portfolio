@@ -457,3 +457,12 @@ html {
 .contact-form button:hover {
   background: #00c2cc;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-links a.active {
+  color: #00f7ff;
+  font-weight: bold;
+}
