@@ -80,3 +80,8 @@ navItems.forEach(link => {
 
   typeEffect();
 });
+
+document.querySelector(".theme-toggle")
+  .addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
