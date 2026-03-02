@@ -380,6 +380,7 @@ html {
   width: 300px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
+  will-change: transform;
 }
 
 .project-card:hover {
@@ -540,6 +541,7 @@ nav a:hover::after {
 .hero h1 {
   font-size: 3rem;
   background: linear-gradient(90deg, #00f2fe, #4facfe);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -605,4 +607,48 @@ button, .cta-btn {
 
 button:hover, .cta-btn:hover {
   box-shadow: 0 0 25px #00f2fe;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  width: 0%;
+  z-index: 2000;
+}
+
+.hamburger span {
+  transition: 0.4s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card {
+  overflow: hidden;
+}
+
+.project-card img {
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
 }

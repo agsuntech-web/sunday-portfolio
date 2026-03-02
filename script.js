@@ -154,3 +154,21 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+
+  document.querySelector(".scroll-progress").style.width =
+    scrollPercent + "%";
+})
+
+const hamburger = document.querySelector(".hamburger");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+});
