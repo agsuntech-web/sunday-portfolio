@@ -172,3 +172,12 @@ const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
 });
+
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("backToTop");
+  btn.style.display = window.pageYOffset > 300 ? "block" : "none";
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
