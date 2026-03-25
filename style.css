@@ -100,20 +100,20 @@ section {
 }
 
 .btn {
-    background: #00ffcc;
-    color: #000;
-    padding: 12px 28px;
-    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px;
     border-radius: 30px;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
-    display: inline-block;
 }
 
 .btn:hover {
-    background: #00ccaa;
-    transform: translatey(-5px);
-    box-shadow: 0 10px 20px rgba(0, 255, 204, 0.3);
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #0056b3, #0096c7);
 }
 
 
@@ -226,6 +226,7 @@ section h2::after {
   padding: 20px;
   border-radius: 15px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .project-card h3 {
@@ -240,7 +241,7 @@ section h2::after {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
 }
 
 .project-btn {
@@ -669,4 +670,9 @@ button:hover, .cta-btn:hover {
   border-radius: 50%;
   cursor: pointer;
   display: none;
+}
+
+.project-actions {
+  margin-top: 10px;
+  text-align: center;
 }
