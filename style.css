@@ -379,14 +379,14 @@ html {
   padding: 30px;
   border-radius: 15px;
   width: 300px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease;
   cursor: pointer;
   will-change: transform;
 }
 
 .project-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 15px 35px rgba(0, 247, 255, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .project-btn {
