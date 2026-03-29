@@ -101,19 +101,20 @@ section {
 
 .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 18px;
     margin: 5px;
-    border-radius: 30px;
+    border-radius: 6px;
     background: linear-gradient(45deg, #007bff, #00c6ff);
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-4px);
     background: linear-gradient(45deg, #0056b3, #0096c7);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -379,14 +380,14 @@ html {
   padding: 30px;
   border-radius: 15px;
   width: 300px;
-  transition: transform 0.4s ease;
+  transition: all 0.3s ease; 
   cursor: pointer;
   will-change: transform;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .project-btn {
@@ -564,8 +565,8 @@ nav a:hover::after {
 
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s ease;
+  transform: translateY(50px);
+  transition: 0.6s ease;
 }
 
 .reveal.active {
